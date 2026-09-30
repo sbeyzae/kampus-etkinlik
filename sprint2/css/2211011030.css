@@ -1,0 +1,153 @@
+/* Beyza Eryiğit — 2211011030 */
+:root {
+  --no: 2211011030;
+  --ton: mod(var(--no), 360);      /* 2211011030 mod 360 = 110 */
+  --renk-ana: hsl(var(--ton) 65% 38%);
+  --renk-zemin: hsl(var(--ton) 30% 97%);
+  --font: Arial, sans-serif;        /* son hane: 0 → Arial */
+  --bosluk-m: 1rem;
+  --bosluk-l: 2rem;
+  --kose: 8px;
+}
+
+/* Temel */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: #1a1a1a;
+  background: var(--renk-zemin);
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--bosluk-m);
+}
+
+a { color: var(--renk-ana); }
+h1, h2, h3 { color: var(--renk-ana); }
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* Header ve nav */
+header {
+  background: var(--renk-ana);
+  padding: var(--bosluk-m);
+}
+
+header > a:first-child {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem var(--bosluk-m);
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover { text-decoration: underline; }
+
+/* Kartlar: section > article (telefonda tek sütun, genişte birden fazla) */
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--bosluk-m);
+  margin: var(--bosluk-l) 0;
+}
+
+article {
+  background: white;
+  border-radius: var(--kose);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  padding: var(--bosluk-m);
+}
+
+article h2, article h3 { margin-top: 0; font-size: 1.1rem; }
+
+/* Tablo (Ayın Programı) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--bosluk-l) 0;
+  overflow-x: auto;
+  display: block;
+}
+
+caption { font-weight: bold; margin-bottom: 0.5rem; text-align: left; }
+th, td { border: 1px solid #ccc; padding: 0.5rem; text-align: left; }
+
+/* Etkinlik detay: afiş solda, künye sağda (geniş ekran); telefonda alt alta */
+.detay-icerik {
+  display: flex;
+  flex-direction: column;
+  gap: var(--bosluk-m);
+}
+
+.detay-icerik figure { margin: 0; }
+
+dl { margin: 0; }
+dt { font-weight: bold; margin-top: 0.5rem; }
+dd { margin: 0; }
+
+/* Formlar */
+form { max-width: 500px; }
+
+.form-alan {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--bosluk-m);
+}
+
+.form-alan label { font-weight: bold; margin-bottom: 0.25rem; }
+
+input, select, textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: var(--kose);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Boş zorunlu alan: tarayıcının doğal "required" uyarısı kullanılıyor,
+   bu yüzden burada ekstra :invalid stili yok (sayfa açılır açılmaz
+   kırmızı görünmesin diye). */
+
+button {
+  background: var(--renk-ana);
+  color: white;
+  border: none;
+  border-radius: var(--kose);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+button:hover { opacity: 0.9; }
+
+/* Geniş ekran */
+@media (min-width: 700px) {
+  .detay-icerik {
+    flex-direction: row;
+  }
+  .detay-icerik figure,
+  .detay-icerik dl {
+    flex: 1;
+  }
+}
