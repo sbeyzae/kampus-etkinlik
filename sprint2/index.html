@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kampüs Etkinlikleri - Ana Sayfa</title>
   <link rel="stylesheet" href="css/2211011030.css">
+  <script type="module" src="js/event-list.js"></script>
 </head>
 <body>
 
@@ -14,7 +15,6 @@
       <a href="index.html">Ana Sayfa</a>
       <a href="etkinlikler.html">Etkinlikler</a>
       <a href="etkinlik-ekle.html">Ekle</a>
-      <a href="etkinlik-guncelle.html">Güncelle</a>
     </nav>
   </header>
 
@@ -22,19 +22,8 @@
     <h1>Kampüs Etkinlikleri</h1>
     <p>Fakültedeki seminer, atölye ve söyleşileri tek yerden takip edin.</p>
 
-    <section>
-      <h2>Yaklaşan 2 Etkinlik</h2>
-      <article>
-        <h3>Kariyer Günleri 2026</h3>
-        <p><time datetime="2026-10-12">12 Ekim 2026</time></p>
-        <a href="etkinlik-detay.html">Detayları gör</a>
-      </article>
-      <article>
-        <h3>Robotik Atölyesi</h3>
-        <p><time datetime="2026-10-20">20 Ekim 2026</time></p>
-        <a href="etkinlik-detay.html">Detayları gör</a>
-      </article>
-    </section>
+    <h2>Yaklaşan 2 Etkinlik</h2>
+    <section id="etkinlik-listesi" class="etkinlik-listesi" data-limit="2"></section>
 
     <p><a href="etkinlikler.html">Tüm etkinlikleri gör</a></p>
   </main>
