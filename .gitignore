@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Vercel
+.vercel
+
+# Editör
+.vscode/
+
+# Log dosyaları
+*.log
