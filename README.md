@@ -47,5 +47,4 @@ Etiket: `sprint-03`
 
 ## Canlı adres
 
-> Vercel'de yayına aldıktan sonra buraya ekleyin: `https://...vercel.app`
-> (Sprint 3 için Vercel Root Directory ayarını `sprint3` yapmayı unutma.)
+> https://frontend-sbeyzae.vercel.app/
