@@ -46,5 +46,5 @@ sayfasındaki "Bu etkinliği güncelle" butonuyla gidiliyor.
 Etiket: `sprint-03`
 
 ## Canlı adres
-
-> https://frontend-sbeyzae.vercel.app/
+Sprint 5
+> https://kampus-etkinlik-sprint3-71t3.vercel.app/
