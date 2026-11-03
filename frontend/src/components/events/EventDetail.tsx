@@ -1,12 +1,11 @@
-import type { CampusEvent } from "../../types/campus-event";
+import { Link } from 'react-router-dom';
+import type { CampusEvent } from '../../types/campus-event';
 
 interface EventDetailProps {
   event: CampusEvent;
-  onBack: () => void;
-  onEdit: (id: string) => void;
 }
 
-function EventDetail({ event, onBack, onEdit }: EventDetailProps) {
+function EventDetail({ event }: EventDetailProps) {
   return (
     <article className="detay">
       <h2>{event.title}</h2>
@@ -36,8 +35,8 @@ function EventDetail({ event, onBack, onEdit }: EventDetailProps) {
         <p>{event.description}</p>
       </div>
       <div className="butonlar">
-        <button onClick={onBack}>&larr; Listeye dön</button>
-        <button onClick={() => onEdit(event.id)}>Bu etkinliği güncelle</button>
+        <Link to="/events" className="buton">&larr; Listeye dön</Link>
+        <Link to={`/admin/${event.id}/edit`} className="buton">Bu etkinliği güncelle</Link>
       </div>
     </article>
   );
