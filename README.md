@@ -1,50 +1,24 @@
-> Canlı adres: `https://...vercel.app` — Vercel'de yayına aldıktan sonra bu satırı güncelle.
+# Kampüs Etkinlikleri - Vize Projesi
 
-# Kampüs Etkinlikleri
+* **Ad Soyad:** Şerife Beyza Eryiğit
+* **Öğrenci No:** 2211011030
+* **Canlı Vercel Adresi:** https://serifebeyzaeryigit-frontend-sbeyzae.vercel.app/
 
-**Beyza Eryiğit · 2211011030**
+## Kurulum
+Projeyi yerel ortamda çalıştırmak için terminalde sırasıyla şu komutları çalıştırın:
+\`\`\`bash
+cd frontend
+npm install
+npm run dev
+\`\`\`
 
-Kampüs Etkinlikleri uygulaması. Sprint 1'de sadece HTML iskeleti kuruldu;
-Sprint 2'de CSS giydirildi (responsive, mobil öncelikli); Sprint 3'te
-sayfalar sabit veriden (data.js) JavaScript ile üretilir hâle geldi.
-
-## Sprint 1 — HTML ve Git
-
-- `sprint1/index.html` — Ana sayfa
-- `sprint1/etkinlikler.html` — Etkinlik listesi
-- `sprint1/etkinlik-detay.html` — Etkinlik detay sayfası
-- `sprint1/etkinlik-ekle.html` — Yeni etkinlik ekleme formu
-- `sprint1/etkinlik-guncelle.html` — Etkinlik güncelleme formu
-
-Etiket: `sprint-01`
-
-## Sprint 2 — CSS ve Responsive Tasarım
-
-Sprint 1 ile aynı 5 sayfa; `sprint2/css/2211011030.css` her sayfaya bağlı.
-
-- `--no: 2211011030` → `--ton: mod(var(--no), 360)` = **110**
-- Font: numaranın son hanesi (0) → **Arial**
-- Etkinlik kartları `section > article` + grid (telefonda tek sütun)
-- Etkinlik detayında afiş solda / künye sağda (≥700px), telefonda alt alta
-
-Etiket: `sprint-02`
-
-## Sprint 3 — JavaScript ve DOM
-
-Sprint 2 ile aynı 5 sayfa; artık `sprint3/js/` altında 4 modül var:
-
-- `data.js` — 6 etkinliğin tutulduğu tek veri kaynağı (dışa aktarılan `events` dizisi)
-- `event-list.js` — kartları veriden üretir; `index.html` (yaklaşan 2) ve
-  `etkinlikler.html` (tümü + arama/kategori filtresi) aynı modülü kullanır
-- `event-detail.js` — adresteki `?id=` değerine göre doğru etkinliği açar
-- `event-form.js` — ekleme ve güncelleme formlarını yakalar, doğrular,
-  sonucu ekranda gösterir (bu sprintte hiçbir şey kalıcı kaydedilmez)
-
-Menüden **Güncelle** linki kaldırıldı; güncelleme sayfasına sadece detay
-sayfasındaki "Bu etkinliği güncelle" butonuyla gidiliyor.
-
-Etiket: `sprint-03`
-
-## Canlı adres
-Sprint 5
-> https://kampus-etkinlik-sprint3-71t3.vercel.app/
+## Route Listesi
+* `/` -> Ana Sayfa
+* `/events` -> Tüm Etkinlikler
+* `/events/:id` -> Etkinlik Detay Sayfası
+* `/admin` -> Yönetim Sayfası
+* `/admin/new` -> Yeni Etkinlik Ekleme
+* `/admin/:id/edit` -> Etkinlik Düzenleme
+* `/login` -> Giriş Yap
+* `/register` -> Kayıt Ol
+* `/forgot-password` -> Şifremi Unuttum
