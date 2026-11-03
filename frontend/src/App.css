@@ -248,3 +248,110 @@ button:hover { opacity: 0.9; }
 }
 .buton:hover,
 .hata-kutusu a:hover { opacity: 0.9; }
+/* Üst yeşil alan içindeki başlık ve metinlerin beyaz görünmesi için */
+.ust-alan h1,
+.ust-alan p,
+.ust-alan .baslik-metni h1,
+.ust-alan .baslik-metni p {
+  color: #ffffff !important;
+}
+/* Etkinlik listesinin olduğu tüm alanlarda kartların yan yana ızgara şeklinde durmasını sağlar */
+.etkinlik-listesi {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+/* Ana sayfa özel yerleşim düzeni */
+.ana-sayfa-icerik {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ana-sayfa-govde {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ana-sayfa-govde .etkinlik-listesi {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.ana-sayfa-govde .kart {
+  flex: 1;
+  min-width: 0;
+}
+
+.tum-etkinlikler-buton-alani {
+  margin-top: 10px;
+}
+
+/* Mobil görünümde (ekran küçülünce) alt alta gelsin */
+@media (max-width: 768px) {
+  .ana-sayfa-govde .etkinlik-listesi {
+    flex-direction: column;
+  }
+}
+/* Ana sayfa yan yana kart yerleşimi kesin çözüm */
+.ana-sayfa-icerik {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  gap: 30px !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+}
+
+.ana-sayfa-baslik {
+  flex: 0 0 260px !important;
+}
+
+.ana-sayfa-govde {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important;
+  min-width: 0 !important;
+}
+
+.ana-sayfa-govde .etkinlik-listesi {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 20px !important;
+  width: 100% !important;
+}
+
+.ana-sayfa-govde .etkinlik-listesi .kart {
+  flex: 1 !important;
+  margin: 0 !important;
+}
+/* Giriş, Kayıt ve Şifremi Unuttum formlarının simetrik ve düzgün durması için */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+}
+
+.form-grup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-grup label {
+  font-weight: bold;
+  color: #222;
+}
+
+.form-grup input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
