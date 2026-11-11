@@ -1,0 +1,21 @@
+### 1. Başarılı Etkinlik Ekleme (201)
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+  "title": "Git Atölyesi",
+  "category": "Atölye",
+  "capacity": 30,
+  "date": "2026-12-01",
+  "time": "14:00",
+  "location": "Bilgisayar Laboratuvarı 1",
+  "description": "Git ve GitHub ile ilk adımlar."
+}
+
+### 2. Eksik Veri Hatası (400)
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+  "title": "Sadece Başlık"
+}
