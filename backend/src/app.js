@@ -1,8 +1,8 @@
 import express from "express";
 import cors from "cors";
 
-// Birazdan oluşturacağımız route dosyasını içe aktarıyoruz
-// import eventRoutes from "./routes/event-routes.js";
+
+import eventRoutes from "./routes/event-routes.js";
 
 const app = express();
 
@@ -19,8 +19,8 @@ app.get("/health", (req, res) => {
   });
 });
 
-// Etkinlik Route'ları (Route'ları yazdığımızda buranın yorumunu kaldıracağız)
-// app.use("/events", eventRoutes);
+// Etkinlik Route'ları 
+app.use("/events", eventRoutes);
 
 // Tanımlanmayan bir route gelirse 404 dön
 app.use((req, res) => {
