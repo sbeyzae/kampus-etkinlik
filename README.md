@@ -2,7 +2,7 @@
 
 * **Ad Soyad:** Şerife Beyza Eryiğit
 * **Öğrenci No:** 2211011030
-* **Canlı Vercel Adresi:** https://serifebeyzaeryigit-frontend-sbeyzae.vercel.app/
+* **Canlı Vercel Adresi:** (https://serifebeyzaeryigit-frontend.vercel.app/)
 * (Not: Vercel dağıtımı GitHub hesabı (`sbeyzae`) entegrasyonu üzerinden yapıldığı için URL'de  eki yer almaktadır.)*
 
 ## Kurulum
