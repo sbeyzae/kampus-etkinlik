@@ -59,4 +59,4 @@ export const events = [
     location: "Kapalı Spor Salonu",
     description: "Sektörün önde gelen firmalarıyla staj ve iş görüşmeleri.",
   }
-];
+]

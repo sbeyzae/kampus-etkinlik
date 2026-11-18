@@ -19,3 +19,34 @@ Content-Type: application/json
 {
   "title": "Sadece Başlık"
 }
+
+### Yeni Etkinlik Ekle
+POST http://localhost:3000/events
+Content-Type: application/json
+
+{
+  "title": "Node.js & MongoDB Atölyesi",
+  "category": "Atölye",
+  "capacity": 40,
+  "date": "2026-12-10",
+  "time": "15:00",
+  "location": "Bilgisayar Lab 3",
+  "description": "Mongoose ve Express ile ileri düzey backend geliştirme."
+}
+
+### 4. Etkinliği Güncelle (PUT)
+# (Güncellemek istediğin etkinliğin ID'sini buraya yaz)
+PUT http://localhost:3000/events/6afd5cf041fa5b534aed093c
+Content-Type: application/json
+
+{
+  "capacity": 50,
+  "description": "Kapasite güncellendi."
+}
+
+### 5. Etkinliği Sil (DELETE)
+# (Silmek istediğin etkinliğin ID'sini buraya yaz - 204 No Content dönmeli)
+DELETE http://localhost:3000/events/6afd5cf041fa5b534aed093b
+
+### Olmayan veya Geçersiz ID Testi (404)
+GET http://localhost:3000/events/6afd5b2f865aaf33e106d954
