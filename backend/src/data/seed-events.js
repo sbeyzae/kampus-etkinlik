@@ -1,21 +1,58 @@
 export const seedEvents = [
   {
-    title: "Kariyer Günleri 2026",
-    category: "Seminer",
-    capacity: 100,
-    date: "2026-12-01",
+    title: "Robotik Atölyesi",
+    category: "Atölye",
+    capacity: 25,
+    date: "15-10-2026",
     time: "14:00",
-    location: "A Blok Konferans Salonu",
-    description: "Mezunlarla kariyer söyleşileri ve şirket standları."
+    location: "Mühendislik Lab 1",
+    description: "Geçmiş tarihli robotik uygulama atölyesi.",
   },
   {
-    title: "React ile Modern Web",
+    title: "Web Tasarım Atölyesi",
     category: "Atölye",
-    capacity: 30,
-    date: "2026-11-20",
-    time: "10:00",
-    location: "Bilgisayar Laboratuvarı 1",
-    description: "Sıfırdan ileri seviyeye uygulamalı React atölyesi."
+    capacity: 40,
+    date: "05-11-2026",
+    time: "13:30",
+    location: "Bilgisayar Lab 2",
+    description: "Geçmiş tarihli modern web tasarım oturumu.",
   },
-  // (Diğer 4 etkinliğini de buraya ekleyebilirsin, id alanları olmamalı)
+  {
+    title: "Kariyer Günleri 2026",
+    category: "Kariyer",
+    capacity: 150,
+    date: "01-12-2026",
+    time: "10:00",
+    location: "Kongre Merkezi",
+    description: "Sektör temsilcileri ile kariyer buluşması.",
+  },
+  {
+    title: "Siber Güvenlik Söyleşisi",
+    category: "Söyleşi",
+    capacity: 80,
+    date: "08-12-2026",
+    time: "15:00",
+    location: "Büyük Salon",
+    description: "Uygulamalı siber güvenlik ve savunma söyleşisi.",
+  },
+  {
+    title: "Kodlama Yarışması",
+    category: "Yarışma",
+    capacity: 60,
+    date: "15-12-2026",
+    time: "09:30",
+    location: "Teknokent Salon A",
+    description: "Algoritma ve problem çözme yarışması.",
+  },
+  {
+    title: "Yapay Zekâ Semineri",
+    category: "Seminer",
+    capacity: 120,
+    date: "17-12-2026",
+    time: "14:30",
+    location: "Konferans Salonu",
+    description: "Üretken yapay zekâ ve otonom sistemler semineri.",
+  },
 ];
+
+export default seedEvents;

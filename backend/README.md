@@ -20,8 +20,8 @@ Sunucu `.env` dosyasındaki port üzerinden çalışır (Varsayılan: `3000`). �
 | **GET** | `/events` | Tüm etkinlikleri listele (isteğe bağlı `?category=`) | `200 OK` | — | Bu sprint |
 | **GET** | `/events/:id` | ID'ye göre tek etkinlik getir | `200 OK` | `404 Not Found` | Bu sprint |
 | **POST** | `/events` | Yeni etkinlik oluştur | `201 Created` | `400 Bad Request` | Bu sprint |
-| **PATCH** | `/events/:id` | Etkinlik güncelle | `200 OK` | `400, 404` | Sprint 9 |
-| **DELETE** | `/events/:id` | Etkinlik sil | `204 No Content` | `404 Not Found` | Sprint 9 |
+| **PATCH** | `/events/:id` | Etkinlik güncelle | `200 OK` | `400, 404` | Çalışıyor |
+| **DELETE** | `/events/:id` | Etkinlik sil | `204 No Content` | `404 Not Found` | Çalışıyor |
 
 ### Hata Biçimi Örneği
 Tüm hatalar standart bir JSON yapısıyla döner:

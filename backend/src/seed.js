@@ -1,7 +1,7 @@
 import "dotenv/config";
 import mongoose from "mongoose";
 import { connectDatabase } from "./config/database.js";
-import { Event } from "./models/event-model.js";
+import Event from "./models/event-model.js";
 import { seedEvents } from "./data/seed-events.js";
 
 try {
